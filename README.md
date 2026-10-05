@@ -5,6 +5,9 @@ Three ImageNet-pretrained CNNs (MobileNetV2, ResNet50, EfficientNet-B0) are fine
 **leaf-level, leakage-audited split**, compared on standard metrics, and the best one (chosen on
 the validation set only) is served with Grad-CAM explanations through a CLI and a Streamlit app.
 
+**Live app:** <https://grapevine-disease-classifier.streamlit.app/> (Streamlit Community Cloud; upload a leaf
+photo to get the class, confidence and Grad-CAM heatmap).
+
 All numbers in this README and in `artifacts/` come from actual runs on an Apple M2 (8 GB);
 `python -m grapevine.report` regenerates `artifacts/reports/results.md` from the output files.
 
@@ -165,7 +168,8 @@ The repository is deployable as is: Community Cloud installs `requirements.txt` 
 2. Open <https://share.streamlit.io>, sign in with GitHub, and choose **Create app -> Deploy a
    public app from GitHub** (or open
    <https://share.streamlit.io/deploy?repository=mehakmittal1234/grapevine-disease-classifier&branch=main&mainModule=app.py>).
-3. Repository `mehakmittal1234/grapevine-disease-classifier`, branch `main`, main file `app.py`; pick an app URL; under
+3. Repository `mehakmittal1234/grapevine-disease-classifier`, branch `main`, main file `app.py`; app URL
+   `grapevine-disease-classifier` (live at <https://grapevine-disease-classifier.streamlit.app/>); under
    **Advanced settings** select **Python 3.12** (3.13 and 3.14 also work); click **Deploy**.
 4. The first build takes a few minutes. Apps on the free tier sleep after a period without
    traffic and wake on the next visit.

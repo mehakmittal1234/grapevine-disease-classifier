@@ -17,3 +17,6 @@ artifacts/runs/*/best.pt
 # `python -m grapevine.gradcam` and `python -m grapevine.prepare_data`.
 artifacts/reports/gradcam/
 artifacts/data/*.jpg
+
+# Local editor/agent config
+.claude/

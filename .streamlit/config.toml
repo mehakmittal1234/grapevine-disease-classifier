@@ -4,3 +4,11 @@ maxUploadSize = 10
 
 [browser]
 gatherUsageStats = false
+
+[theme]
+# Light vineyard palette; app.py's custom cards and bars are designed against it.
+base = "light"
+primaryColor = "#3F7D3A"
+backgroundColor = "#F7F8F3"
+secondaryBackgroundColor = "#ECF1E5"
+textColor = "#1E2A1E"

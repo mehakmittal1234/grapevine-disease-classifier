@@ -22,8 +22,9 @@ Generated from the output files by `python -m grapevine.report`; full details in
 | resnet50 | 1.0000 | 100.00% | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 (1732) | 99.20% | 100.00% | 0 / 1798 | 23.52 | 54.5 | 43.9 |  |
 | efficientnet_b0 | 1.0000 | 100.00% | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 (1732) | 99.20% | 99.89% | 0 / 1798 | 4.01 | 165.0 | 34.6 | **yes** |
 
-**Selected model: efficientnet_b0** (max validation macro-F1, then min validation log-loss, then fewest parameters). On the held-out test split (1798 images from 458 leaves never seen in training): accuracy 100.00%, macro-F1 1.0000, 0 errors.
-Counting each leaf once (458/458 correct), the exact 95% interval for accuracy is 99.20% - 100.00%.
+**Selected model: efficientnet_b0** (max validation macro-F1, then min validation log-loss, then fewest parameters).
+**Headline figure: accuracy >= 99.20% on unseen leaves**, the exact 95% lower bound counting each of the 458 held-out leaves once (458/458 correct). A finite test set cannot establish perfect accuracy, and field photos were not evaluated.
+Measured on the held-out split (1798 images): accuracy 100.00%, macro-F1 1.0000, 0 errors.
 With the background painted grey the test accuracy is 99.89% (2 errors).
 All models reach the same test accuracy, so the choice rests on the validation log-loss tie-break (mobilenet_v2 0.0797, resnet50 0.0798, efficientnet_b0 0.0781). If CPU latency matters more, mobilenet_v2 is 4.2x faster on CPU (39 vs 165 ms per image): pass `--checkpoint artifacts/runs/mobilenet_v2/best.pt` to `predict`, or set `GRAPEVINE_CHECKPOINT` for the app.
 

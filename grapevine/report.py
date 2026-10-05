@@ -153,13 +153,14 @@ def readme_section() -> list[str]:
              "[`artifacts/reports/results.md`](artifacts/reports/results.md).", ""]
     lines += comparison_section()[2:]  # table without its heading
     t = m["test"]["all"]
-    lines += [f"**Selected model: {best}** ({card['selection_rule']}). On the held-out test split "
-              f"({t['n']} images from {m['test']['one_image_per_leaf']['n']} leaves never seen in training): "
-              f"accuracy {_pct(t['accuracy'])}, macro-F1 {_f(t['macro_f1'])}, {t['errors']} errors."]
     ci = m.get("test_accuracy_exact_95ci_one_image_per_leaf")
+    lines += [f"**Selected model: {best}** ({card['selection_rule']})."]
     if ci:
-        lines += [f"Counting each leaf once ({ci['correct']}/{ci['n']} correct), the exact 95% interval for accuracy is "
-                  f"{_pct(ci['interval'][0])} - {_pct(ci['interval'][1])}."]
+        lines += [f"**Headline figure: accuracy >= {_pct(ci['interval'][0])} on unseen leaves**, the exact 95% lower "
+                  f"bound counting each of the {ci['n']} held-out leaves once ({ci['correct']}/{ci['n']} correct). A "
+                  "finite test set cannot establish perfect accuracy, and field photos were not evaluated."]
+    lines += [f"Measured on the held-out split ({t['n']} images): accuracy {_pct(t['accuracy'])}, "
+              f"macro-F1 {_f(t['macro_f1'])}, {t['errors']} errors."]
     bn = m.get("background_neutralized_test")
     if bn:
         lines += [f"With the background painted grey the test accuracy is {_pct(bn['all']['accuracy'])} "

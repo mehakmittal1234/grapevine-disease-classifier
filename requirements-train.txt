@@ -1,0 +1,13 @@
+# Full training / data-audit stack: exact versions used to produce the reported results
+# (Python 3.14, macOS arm64 / Apple M2). The deployed app only needs requirements.txt.
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.18.1
+matplotlib==3.11.2
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+tqdm==4.70.1
+streamlit==1.65.0

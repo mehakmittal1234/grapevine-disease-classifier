@@ -1,0 +1,13 @@
+{
+  "model": "resnet50",
+  "best_epoch": 9,
+  "best_phase": "finetune",
+  "best_val_macro_f1": 1.0,
+  "best_val_acc": 1.0,
+  "best_val_loss": 0.35180304335196494,
+  "epochs_run": 10,
+  "train_seconds": 2633.5,
+  "parameters": 23516228,
+  "device": "mps",
+  "amp": true
+}

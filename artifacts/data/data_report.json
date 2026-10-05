@@ -1,0 +1,335 @@
+{
+  "data_root": "..",
+  "seed": 42,
+  "manifest": {
+    "files_scanned": 12000,
+    "unreadable_files": [],
+    "exact_duplicates_removed": 46,
+    "exact_duplicates_across_classes": 0,
+    "usable_files": 11954,
+    "files_per_class": {
+      "Black Rot": 2994,
+      "ESCA": 3000,
+      "Healthy": 3000,
+      "Leaf Blight": 2960
+    },
+    "files_per_class_and_type": {
+      "Black Rot / jpg_photo": 1650,
+      "Black Rot / png_keras_aug": 1344,
+      "ESCA / jpg_photo": 1656,
+      "ESCA / png_keras_aug": 1344,
+      "Healthy / jpg_photo": 1656,
+      "Healthy / png_keras_aug": 1344,
+      "Leaf Blight / jpg_photo": 1616,
+      "Leaf Blight / png_keras_aug": 1344
+    },
+    "image_sizes": {
+      "jpg 256x256": 6578,
+      "png 224x224": 5376
+    },
+    "augmentation_tags": {
+      "Black Rot / flipLR": 832,
+      "Black Rot / keras_random": 1344,
+      "Black Rot / none": 818,
+      "ESCA / flipLR": 679,
+      "ESCA / keras_random": 1344,
+      "ESCA / none": 977,
+      "Healthy / 180deg": 339,
+      "Healthy / 270deg": 329,
+      "Healthy / 90deg": 324,
+      "Healthy / keras_random": 1344,
+      "Healthy / new30degFlipLR": 328,
+      "Healthy / none": 336,
+      "Leaf Blight / flipLR": 805,
+      "Leaf Blight / keras_random": 1344,
+      "Leaf Blight / none": 811
+    },
+    "filename_groups_per_class_and_type": {
+      "Black Rot / jpg_photo": 999,
+      "Black Rot / png_keras_aug": 24,
+      "ESCA / jpg_photo": 1121,
+      "ESCA / png_keras_aug": 24,
+      "Healthy / jpg_photo": 413,
+      "Healthy / png_keras_aug": 24,
+      "Leaf Blight / jpg_photo": 966,
+      "Leaf Blight / png_keras_aug": 24
+    },
+    "unparsed_filenames": []
+  },
+  "near_duplicates": {
+    "method": "candidates = MobileNetV2 embedding top-k + consecutive photo numbers; verified by SIFT (ratio + mutual NN) and RANSAC affine fit, mirror-aware",
+    "config": {
+      "embed_batch_size": 64,
+      "num_workers": 2,
+      "shortlist_k": 15,
+      "sequence_window": 3,
+      "sift_features": 600,
+      "ratio": 0.75,
+      "ransac_px": 3.0,
+      "min_inliers": 8,
+      "min_inliers_sequence": 6,
+      "weak_match_inliers": 6,
+      "verify_workers": 6,
+      "calibration_pairs": 1500,
+      "audit_k": 40
+    },
+    "embedding_similarity": {
+      "within_filename_group_jpg": {
+        "n": 5323,
+        "min": 0.7397,
+        "p01": 0.8512,
+        "p05": 0.8976,
+        "median": 0.9999,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "within_filename_group_png": {
+        "n": 5376,
+        "min": 0.7832,
+        "p01": 0.8431,
+        "p05": 0.8731,
+        "median": 0.9265,
+        "p95": 0.966,
+        "p99": 0.9757,
+        "max": 0.9877
+      },
+      "nearest_other_group": {
+        "n": 11954,
+        "min": 0.709,
+        "p01": 0.8001,
+        "p05": 0.8295,
+        "median": 0.8945,
+        "p95": 0.9483,
+        "p99": 0.9661,
+        "max": 0.9827
+      }
+    },
+    "calibration_inliers": {
+      "same_group_jpg": {
+        "n": 300,
+        "min": 28.0,
+        "p01": 34.0,
+        "p05": 63.95,
+        "median": 302.5,
+        "p95": 475.45,
+        "p99": 545.01,
+        "max": 591.0
+      },
+      "same_group_png": {
+        "n": 300,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "median": 103.5,
+        "p95": 242.0,
+        "p99": 312.11,
+        "max": 349.0
+      },
+      "random_same_class_other_group": {
+        "n": 1500,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "p99": 4.0,
+        "max": 10.0
+      }
+    },
+    "calibration_rate_ge_min_inliers": {
+      "same_group_jpg": 1.0,
+      "same_group_png": 0.75,
+      "random_same_class_other_group": 0.0007
+    },
+    "hard_negative_rates_cross_class": {
+      "jpg-jpg": {
+        "cross_class_candidates": 2509,
+        "rate_inliers_ge_4": 0.03308,
+        "rate_inliers_ge_5": 0.01554,
+        "rate_inliers_ge_6": 0.0008,
+        "rate_inliers_ge_7": 0.0,
+        "rate_inliers_ge_8": 0.0,
+        "rate_inliers_ge_10": 0.0
+      },
+      "with_png": {
+        "cross_class_candidates": 7743,
+        "rate_inliers_ge_4": 0.03138,
+        "rate_inliers_ge_5": 0.00659,
+        "rate_inliers_ge_6": 0.00116,
+        "rate_inliers_ge_7": 0.00039,
+        "rate_inliers_ge_8": 0.0,
+        "rate_inliers_ge_10": 0.0
+      }
+    },
+    "candidate_pairs_verified": 346196,
+    "links": 5630,
+    "links_by_kind": {
+      "jpg-jpg": 3845,
+      "jpg-png": 1546,
+      "png-png": 239
+    },
+    "links_from_sequence_rule_only": 1438,
+    "cross_class_matches_not_merged": [
+      {
+        "path_a": "Black Rot/_401_4110028.png",
+        "path_b": "ESCA/_177_5825379.png",
+        "inliers": 9
+      }
+    ],
+    "png_groups": 96,
+    "png_groups_whose_source_leaf_is_also_a_jpg": 85,
+    "filename_groups": 3595,
+    "source_groups_after_merge": 3049,
+    "merged_source_groups": 267,
+    "largest_source_group_files": 135,
+    "source_group_size_quantiles": {
+      "n": 3049,
+      "min": 1.0,
+      "p01": 1.0,
+      "p05": 1.0,
+      "median": 2.0,
+      "p95": 7.0,
+      "p99": 58.0,
+      "max": 135.0
+    }
+  },
+  "split_fractions_of_groups": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "splits": {
+    "train": {
+      "files": 8180,
+      "source_groups": 2133,
+      "files_per_class": {
+        "Black Rot": 2187,
+        "ESCA": 2057,
+        "Healthy": 1899,
+        "Leaf Blight": 2037
+      },
+      "groups_per_class": {
+        "Black Rot": 660,
+        "ESCA": 763,
+        "Healthy": 85,
+        "Leaf Blight": 625
+      },
+      "original_photos_per_class": {
+        "Black Rot": 581,
+        "ESCA": 690,
+        "Healthy": 226,
+        "Leaf Blight": 572
+      },
+      "png_files_per_class": {
+        "Black Rot": 1008,
+        "ESCA": 896,
+        "Healthy": 784,
+        "Leaf Blight": 896
+      }
+    },
+    "val": {
+      "files": 1976,
+      "source_groups": 458,
+      "files_per_class": {
+        "Black Rot": 404,
+        "ESCA": 483,
+        "Healthy": 635,
+        "Leaf Blight": 454
+      },
+      "groups_per_class": {
+        "Black Rot": 141,
+        "ESCA": 164,
+        "Healthy": 19,
+        "Leaf Blight": 134
+      },
+      "original_photos_per_class": {
+        "Black Rot": 117,
+        "ESCA": 147,
+        "Healthy": 60,
+        "Leaf Blight": 116
+      },
+      "png_files_per_class": {
+        "Black Rot": 168,
+        "ESCA": 224,
+        "Healthy": 336,
+        "Leaf Blight": 224
+      }
+    },
+    "test": {
+      "files": 1798,
+      "source_groups": 458,
+      "files_per_class": {
+        "Black Rot": 403,
+        "ESCA": 460,
+        "Healthy": 466,
+        "Leaf Blight": 469
+      },
+      "groups_per_class": {
+        "Black Rot": 141,
+        "ESCA": 164,
+        "Healthy": 19,
+        "Leaf Blight": 134
+      },
+      "original_photos_per_class": {
+        "Black Rot": 120,
+        "ESCA": 140,
+        "Healthy": 50,
+        "Leaf Blight": 123
+      },
+      "png_files_per_class": {
+        "Black Rot": 168,
+        "ESCA": 224,
+        "Healthy": 224,
+        "Leaf Blight": 224
+      }
+    }
+  },
+  "audit_rounds": [
+    {
+      "round": 1,
+      "heldout_images_checked": 3790,
+      "train_neighbours_per_image": 40,
+      "pairs_checked": 151600,
+      "pairs_newly_verified": 102685,
+      "heldout_images_with_train_match": 5
+    },
+    {
+      "round": 2,
+      "heldout_images_checked": 3890,
+      "train_neighbours_per_image": 40,
+      "pairs_checked": 155600,
+      "pairs_newly_verified": 67221,
+      "heldout_images_with_train_match": 1
+    },
+    {
+      "round": 3,
+      "heldout_images_checked": 3774,
+      "train_neighbours_per_image": 40,
+      "pairs_checked": 150960,
+      "pairs_newly_verified": 1175,
+      "heldout_images_with_train_match": 0
+    }
+  ],
+  "heldout_weak_matches": {
+    "val": {
+      "images": 1976,
+      "with_train_match_ge_6_inliers": 62
+    },
+    "test": {
+      "images": 1798,
+      "with_train_match_ge_6_inliers": 66
+    }
+  },
+  "leakage_checks": {
+    "unassigned_files": 0,
+    "source_groups_in_multiple_splits": 0,
+    "filename_groups_in_multiple_splits": 0,
+    "identical_files_in_multiple_splits": 0,
+    "verified_same_leaf_pairs_across_splits": 0,
+    "audit_heldout_images_with_train_match": 0,
+    "classes_missing_from_a_split": [],
+    "passed": true
+  },
+  "runtime_seconds": 602.5
+}

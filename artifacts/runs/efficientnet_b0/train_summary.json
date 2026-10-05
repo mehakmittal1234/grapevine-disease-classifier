@@ -1,0 +1,13 @@
+{
+  "model": "efficientnet_b0",
+  "best_epoch": 10,
+  "best_phase": "finetune",
+  "best_val_macro_f1": 1.0,
+  "best_val_acc": 1.0,
+  "best_val_loss": 0.35426142184357895,
+  "epochs_run": 10,
+  "train_seconds": 2078.1,
+  "parameters": 4012672,
+  "device": "mps",
+  "amp": false
+}

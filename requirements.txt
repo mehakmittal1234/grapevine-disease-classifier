@@ -1,0 +1,20 @@
+# Runtime dependencies of the Streamlit app (app.py); Streamlit Community Cloud installs this file.
+# The full training / data-audit stack is pinned in requirements-train.txt.
+#
+# PyTorch: CPU-only wheels on Linux x86_64 (the default PyPI Linux build ships ~2.5 GB of CUDA
+# libraries a CPU host cannot use). They are pinned by URL rather than via --extra-index-url,
+# because uv (Community Cloud's installer) would then also take numpy/pillow from the PyTorch
+# index, which lacks the pinned versions. Other platforms (e.g. macOS) use the regular wheels.
+torch @ https://download.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.12"
+torch @ https://download.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.13"
+torch @ https://download.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp314-cp314-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.14"
+torch==2.14.1 ; sys_platform != "linux"
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.12"
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.13"
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp314-cp314-manylinux_2_28_x86_64.whl ; sys_platform == "linux" and platform_machine == "x86_64" and python_version == "3.14"
+torchvision==0.29.1 ; sys_platform != "linux"
+streamlit==1.65.0
+numpy==2.5.3
+pandas==3.0.6
+pillow==12.3.0
+matplotlib==3.11.2

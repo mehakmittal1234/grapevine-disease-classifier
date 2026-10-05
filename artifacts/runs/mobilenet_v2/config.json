@@ -1,0 +1,19 @@
+{
+  "model": "mobilenet_v2",
+  "image_size": 224,
+  "batch_size": 32,
+  "head_epochs": 2,
+  "head_lr": 0.001,
+  "finetune_epochs": 8,
+  "finetune_lr": 0.0002,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.1,
+  "patience": 3,
+  "group_cap": 16,
+  "amp": false,
+  "num_workers": 2,
+  "seed": 42,
+  "max_batches": 0,
+  "amp_effective": false,
+  "device": "mps"
+}

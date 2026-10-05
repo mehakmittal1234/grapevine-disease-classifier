@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+   Black Rot     1.0000    1.0000    1.0000       403
+        ESCA     1.0000    1.0000    1.0000       460
+     Healthy     1.0000    1.0000    1.0000       466
+ Leaf Blight     1.0000    1.0000    1.0000       469
+
+    accuracy                         1.0000      1798
+   macro avg     1.0000    1.0000    1.0000      1798
+weighted avg     1.0000    1.0000    1.0000      1798

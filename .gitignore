@@ -1,0 +1,19 @@
+# Python / local environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Regenerable or large pipeline outputs (prepare_data / train rebuild them)
+artifacts/cache/
+artifacts/logs/
+artifacts/data/embeddings.npz
+artifacts/data/manifest.csv
+artifacts/data/verified_pairs.csv
+artifacts/runs/*/best.pt
+# Note: the selected model, artifacts/best_model/model.pt (16 MB), IS committed - the app loads it.
+
+# Figures made of dataset photos (Grad-CAM grids, audit contact sheets); regenerate locally with
+# `python -m grapevine.gradcam` and `python -m grapevine.prepare_data`.
+artifacts/reports/gradcam/
+artifacts/data/*.jpg

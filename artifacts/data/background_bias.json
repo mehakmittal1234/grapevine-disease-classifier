@@ -1,0 +1,129 @@
+{
+  "description": "Capture-bias probe: how much does the *background* alone reveal about the class?",
+  "features": "colour statistics of background-like border pixels",
+  "chance_accuracy": 0.25,
+  "val_all": {
+    "n": 1976,
+    "accuracy": 0.7307692307692307,
+    "macro_f1": 0.7110293703862836,
+    "confusion_matrix": [
+      [
+        225,
+        59,
+        24,
+        96
+      ],
+      [
+        61,
+        342,
+        15,
+        65
+      ],
+      [
+        53,
+        9,
+        570,
+        3
+      ],
+      [
+        115,
+        32,
+        0,
+        307
+      ]
+    ]
+  },
+  "val_original_photos": {
+    "n": 440,
+    "accuracy": 0.7477272727272727,
+    "macro_f1": 0.7497615996325213,
+    "confusion_matrix": [
+      [
+        67,
+        20,
+        12,
+        18
+      ],
+      [
+        11,
+        120,
+        4,
+        12
+      ],
+      [
+        6,
+        1,
+        53,
+        0
+      ],
+      [
+        20,
+        7,
+        0,
+        89
+      ]
+    ]
+  },
+  "test_all": {
+    "n": 1798,
+    "accuracy": 0.7686318131256952,
+    "macro_f1": 0.7599330714883634,
+    "confusion_matrix": [
+      [
+        227,
+        47,
+        27,
+        102
+      ],
+      [
+        36,
+        399,
+        4,
+        21
+      ],
+      [
+        18,
+        10,
+        438,
+        0
+      ],
+      [
+        110,
+        23,
+        18,
+        318
+      ]
+    ]
+  },
+  "test_original_photos": {
+    "n": 433,
+    "accuracy": 0.7205542725173211,
+    "macro_f1": 0.7298425882913219,
+    "confusion_matrix": [
+      [
+        66,
+        19,
+        13,
+        22
+      ],
+      [
+        14,
+        115,
+        2,
+        9
+      ],
+      [
+        3,
+        1,
+        46,
+        0
+      ],
+      [
+        30,
+        8,
+        0,
+        85
+      ]
+    ]
+  }
+}

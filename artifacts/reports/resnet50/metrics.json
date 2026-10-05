@@ -1,0 +1,816 @@
+{
+  "model": "resnet50",
+  "checkpoint": "artifacts/runs/resnet50/best.pt",
+  "best_epoch": 9,
+  "splits_sha256": "83442c24bed7745b2f511d5cf265cece4650b5127ef5bcf0af2938727cc55983",
+  "val": {
+    "all": {
+      "n": 1976,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07981148362159729,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 404
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 483
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 635
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 454
+        }
+      },
+      "confusion_matrix": [
+        [
+          404,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          483,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          635,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          454
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "original_photos": {
+      "n": 440,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07684236019849777,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 117
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 147
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 60
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 116
+        }
+      },
+      "confusion_matrix": [
+        [
+          117,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          147,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          116
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "one_image_per_leaf": {
+      "n": 458,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07781963795423508,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 141
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 164
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 19
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 134
+        }
+      },
+      "confusion_matrix": [
+        [
+          141,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          164,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          134
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "png_keras_aug": {
+      "n": 952,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.08322206139564514,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 168
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 224
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 336
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 224
+        }
+      },
+      "confusion_matrix": [
+        [
+          168,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          224,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          336,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          224
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "strict_no_weak_train_match": {
+      "n": 1914,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07999908924102783,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 397
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 460
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 604
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 453
+        }
+      },
+      "confusion_matrix": [
+        [
+          397,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          460,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          604,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          453
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    }
+  },
+  "test": {
+    "all": {
+      "n": 1798,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.08053595572710037,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 403
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 460
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 466
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 469
+        }
+      },
+      "confusion_matrix": [
+        [
+          403,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          460,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          466,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          469
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "original_photos": {
+      "n": 433,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07910485565662384,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 120
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 140
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 50
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 123
+        }
+      },
+      "confusion_matrix": [
+        [
+          120,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          140,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          123
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "one_image_per_leaf": {
+      "n": 458,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.07948856800794601,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 141
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 164
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 19
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 134
+        }
+      },
+      "confusion_matrix": [
+        [
+          141,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          164,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          134
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "png_keras_aug": {
+      "n": 840,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.08236943185329437,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 168
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 224
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 224
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 224
+        }
+      },
+      "confusion_matrix": [
+        [
+          168,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          224,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          224,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          224
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    },
+    "strict_no_weak_train_match": {
+      "n": 1732,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_precision": 1.0,
+      "weighted_recall": 1.0,
+      "weighted_f1": 1.0,
+      "mcc": 1.0,
+      "cohen_kappa": 1.0,
+      "log_loss": 0.08047370612621307,
+      "errors": 0,
+      "per_class": {
+        "Black Rot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 391
+        },
+        "ESCA": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 439
+        },
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 433
+        },
+        "Leaf Blight": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 469
+        }
+      },
+      "confusion_matrix": [
+        [
+          391,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          439,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          433,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          469
+        ]
+      ],
+      "roc_auc_ovr_macro": 1.0
+    }
+  },
+  "black_corner_shortcut_check": {
+    "n": 383,
+    "unchanged": {
+      "accuracy": 1.0,
+      "predicted_healthy_rate": 0.0
+    },
+    "rotated_30deg_black_corners": {
+      "accuracy": 1.0,
+      "predicted_healthy_rate": 0.0
+    }
+  },
+  "background_neutralized_test": {
+    "all": {
+      "n": 1798,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "errors": 0,
+      "confusion_matrix": [
+        [
+          403,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          460,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          466,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          469
+        ]
+      ]
+    },
+    "original_photos": {
+      "n": 433,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "errors": 0,
+      "confusion_matrix": [
+        [
+          120,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          140,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          123
+        ]
+      ]
+    }
+  },
+  "test_confidence": {
+    "median": 0.9242078065872192,
+    "p05": 0.8955549001693726,
+    "min": 0.8411646485328674,
+    "median_correct": 0.9242078065872192,
+    "median_wrong": null
+  },
+  "test_accuracy_exact_95ci_one_image_per_leaf": {
+    "correct": 458,
+    "n": 458,
+    "interval": [
+      0.9919780271904426,
+      1.0
+    ]
+  },
+  "test_bootstrap": {
+    "all": {
+      "resampled_unit": "leaf group",
+      "n_groups": 458,
+      "n_boot": 1000,
+      "accuracy_95ci": [
+        1.0,
+        1.0
+      ],
+      "macro_f1_95ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "strict_no_weak_train_match": {
+      "resampled_unit": "leaf group",
+      "n_groups": 450,
+      "n_boot": 1000,
+      "accuracy_95ci": [
+        1.0,
+        1.0
+      ],
+      "macro_f1_95ci": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "efficiency": {
+    "parameters": 23516228,
+    "checkpoint_mb": 89.99,
+    "latency_ms_batch1_mps": 14.08,
+    "latency_ms_batch1_cpu": 54.54
+  }
+}

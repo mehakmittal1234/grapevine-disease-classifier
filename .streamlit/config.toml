@@ -1,0 +1,6 @@
+[server]
+# Leaf photos are small; a low limit also protects the public app.
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false

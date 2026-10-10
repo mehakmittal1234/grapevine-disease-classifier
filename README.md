@@ -5,8 +5,11 @@ Three ImageNet-pretrained CNNs (MobileNetV2, ResNet50, EfficientNet-B0) are fine
 **leaf-level, leakage-audited split**, compared on standard metrics, and the best one (chosen on
 the validation set only) is served with Grad-CAM explanations through a CLI and a Streamlit app.
 
-**Live app:** <https://grapevine-disease-classifier.streamlit.app/> (Streamlit Community Cloud; upload a leaf
-photo to get the class, confidence and Grad-CAM heatmap).
+**Live app:** <https://grapevine-disease-classifier.streamlit.app/> (Streamlit Community Cloud). Four pages:
+**Diagnose** (upload a leaf; class, confidence and a drag-to-compare Grad-CAM view), **Data cleaning** (how the
+leakage-free split was built), **Model comparison** (the three networks and their training curves) and
+**Reliability** (conservative accuracy, background-shortcut checks, confidence and limits). Every figure on
+these pages is read from the report files in `artifacts/`.
 
 All numbers in this README and in `artifacts/` come from actual runs on an Apple M2 (8 GB);
 `python -m grapevine.report` regenerates `artifacts/reports/results.md` from the output files.
@@ -148,7 +151,7 @@ Predict one or more images (prints the label, confidence and all class probabili
 .venv/bin/python -m grapevine.predict path/to/leaf.jpg --gradcam-dir outputs/
 ```
 
-Web app (upload a leaf, see prediction, confidence bar chart and Grad-CAM):
+Web app (diagnosis with Grad-CAM, plus data, model-comparison and reliability pages):
 
 ```bash
 .venv/bin/streamlit run app.py
@@ -186,8 +189,9 @@ docker run --rm --platform linux/amd64 -p 8501:8501 -v "$PWD":/app -w /app pytho
 
 ```
 grapevine_classifier/
-  app.py                    Streamlit app (entry point on Streamlit Community Cloud)
-  .streamlit/config.toml    Streamlit server settings (upload limit, no usage stats)
+  app.py                    Streamlit entry point (page navigation; used by Streamlit Community Cloud)
+  webapp/                   app pages (diagnose, data, models, reliability), report loaders, charts, styling
+  .streamlit/config.toml    Streamlit server settings (upload limit, no usage stats, theme)
   run_pipeline.sh           end-to-end pipeline
   requirements.txt          app runtime dependencies (CPU-only PyTorch on Linux) - used by the cloud
   requirements-train.txt    full training stack, pinned versions used for the reported results

@@ -6,9 +6,9 @@ maxUploadSize = 10
 gatherUsageStats = false
 
 [theme]
-# Light vineyard palette; app.py's custom cards and bars are designed against it.
+# Limestone, vine green, grape and Bordeaux-mixture blue; webapp/style.py uses the same tokens.
 base = "light"
-primaryColor = "#3F7D3A"
-backgroundColor = "#F7F8F3"
-secondaryBackgroundColor = "#ECF1E5"
-textColor = "#1E2A1E"
+primaryColor = "#1D7F8E"
+backgroundColor = "#EEF0EA"
+secondaryBackgroundColor = "#E3E7DE"
+textColor = "#16201B"
